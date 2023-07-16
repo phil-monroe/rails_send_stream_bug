@@ -1,24 +1,14 @@
-# README
+# ActiveStorage Send Stream Investigation
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A minified example of the issue:
+```sh
+curl -v localhost:3000/broken
+```
 
-Things you may want to cover:
+Some examples on how to get past the issue:
+```sh
+curl -v localhost:3000/working_simulating_partial_write
+curl -v localhost:3000/working_with_partial_write
+curl -v localhost:3000/working_with_full_write
+```
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
